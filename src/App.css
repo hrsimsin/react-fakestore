@@ -2,7 +2,6 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  
 }
 
 main{
@@ -17,6 +16,6 @@ main{
 
 @media (max-width: 80em){
   .main-container{
-    grid-template-rows: max(10vh,5em) 1fr;
+    grid-template-rows: max-content 1fr;
   }
 }
