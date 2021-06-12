@@ -7,7 +7,6 @@ header {
 
 h1{
   transition: color 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  background-color: green !important;
 }
 
 @media (min-width: 80em) {
