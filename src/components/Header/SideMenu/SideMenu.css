@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: yellow;
+}
+
+@media (max-width: 80em) {
+    nav {
+        display: none;
+    }
+
+    .theme-toggle{
+        display: none;
+    }
+}

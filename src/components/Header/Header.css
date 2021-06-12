@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  transition: background-color 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+h1{
+  transition: color 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+@media (min-width: 80em) {
+  header {
+    grid-column: 1 / 2;
+  }
+}
+
+@media (max-width: 80em) {
+  header {
+    grid-row: 1 / 2;
+  }
+}
