@@ -3,19 +3,3 @@
 }
 
 
-.categories-container{
-    display: grid;
-    gap: max(3em,10vw);
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    padding: max(1.5em,5vw);
-}
-
-.categories-container div{
-    border-radius: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-

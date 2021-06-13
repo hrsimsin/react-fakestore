@@ -15,22 +15,13 @@ function MenuItem(props) {
     const menu = useContext(MenuContext);
 
     useEffect(()=>{
-        console.log(props.el.name);
-        console.log(location.pathname);
-        console.log(props.el.link);
-        if(props.el.link == location.pathname)
-            setSelected(true);
-        else
-            setSelected(false);
-        console.log(selected);
+        const minLen = Math.min(props.el.link.length,location.pathname.length);
+        setSelected(props.el.link.substr(0,minLen) == location.pathname.substr(0,minLen));
     },[location]);
 
     useEffect(()=>{
-        console.log('ok');
-        console.log(location.pathname);
-        console.log(props.el.link);
-        setSelected(props.el.link.length == location.pathname.length);
-        console.log(selected);
+        const minLen = Math.min(props.el.link.length,location.pathname.length);
+        setSelected(props.el.link.substr(0,minLen) == location.pathname.substr(0,minLen));
     },[]);
 
     return (

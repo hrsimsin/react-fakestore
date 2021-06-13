@@ -9,6 +9,7 @@ import { RiLogoutBoxRFill } from "react-icons/ri";
 import ProductPage from './components/ProductPage/ProductPage';
 import CategoryPage from './components/CategoryPage/CategoryPage';
 import CartPage from './components/CartPage/CartPage';
+import CategoryProductPage from './components/CategoryPage/CategoryProductPage/CategoryProductPage';
 
 import {
   BrowserRouter as Router,
@@ -64,7 +65,7 @@ function App() {
         {
           name: 'Logout',
           icon: <RiLogoutBoxRFill />,
-          link:''
+          link:'/logout'
         }
       ]      
     });
