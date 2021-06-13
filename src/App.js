@@ -4,6 +4,10 @@ import './App.css';
 import MenuContext from './context/MenuContext';
 import { useState } from 'react';
 import ThemeContext from './context/ThemeContext';
+import { FaGifts, FaBeer, FaShoppingCart, FaLayerGroup } from 'react-icons/fa';
+import { RiLogoutBoxRFill } from "react-icons/ri";
+import { VscSymbolClass } from "react-icons/vsc";
+
 
 function App() {
 
@@ -34,24 +38,28 @@ function App() {
       menuList: [
         {
           name: 'Products',
-          selected: true
+          selected: true,
+          icon: <FaGifts/>
         },
         {
           name: 'Categories',
-          selected: false
+          selected: false,
+          icon: <FaLayerGroup/>
         },
         {
           name: 'Cart',
-          selected: false
+          selected: false,
+          icon: <FaShoppingCart/>
+        },
+        {
+          name:'Logout',
+          selected:false,
+          icon: <RiLogoutBoxRFill/>
         }
       ],
       select: (name) => {
         var { menuList, ...rest } = menu;
-        for (let item of menuList) {
-          item.selected = false;
-          if (item.name === name)
-            item.selected = true;
-        }
+        menuList = menuList.map(el => {el.selected = (el.name === name); return el;})
         setMenu({ menuList, ...rest });
       }
     });

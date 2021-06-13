@@ -1,25 +1,21 @@
 nav {
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
     list-style-type: none;
+    padding: 0;
 }
 
-li {
-    cursor: pointer;
-}
-
-.selected {
-    background-color: yellow;
-}
 
 @media (max-width: 80em) {
     nav {
-        display: none;
-    }
-
-    .theme-toggle{
         display: none;
     }
 }

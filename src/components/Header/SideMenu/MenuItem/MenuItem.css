@@ -1,0 +1,22 @@
+li {
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 0.7em 2em;
+    transition: all 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    display: flex;
+    align-items: center;
+}
+
+li .label{
+    margin-left: 0.7em;
+}
+
+.selected {
+    padding-left: 3em;
+    transition: all 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    font-weight: 600;
+}
+
+li:hover{
+    transition: all 100ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
