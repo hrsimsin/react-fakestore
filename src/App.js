@@ -48,34 +48,25 @@ function App() {
       menuList: [
         {
           name: 'Products',
-          selected: true,
           icon: <FaGifts />,
           link: '/products'
         },
         {
           name: 'Categories',
-          selected: false,
           icon: <FaLayerGroup />,
           link: '/categories'
         },
         {
           name: 'Cart',
-          selected: false,
           icon: <FaShoppingCart />,
           link: '/cart'
         },
         {
           name: 'Logout',
-          selected: false,
-          icon: <RiLogoutBoxRFill />
+          icon: <RiLogoutBoxRFill />,
+          link:''
         }
-      ],
-      select: (name) => {
-        var { menuList, ...rest } = menu;
-        menuList = menuList.map(el => { el.selected = (el.name === name); return el; })
-        setMenu({ menuList, ...rest });
-      },
-      getSelected: () => menu.menuList.filter(el => el.selected)[0]
+      ]      
     });
 
   const [theme, setTheme] = useState(lightTheme);
@@ -83,7 +74,7 @@ function App() {
   return (
     <MenuContext.Provider value={menu}>
       <ThemeContext.Provider value={theme}>
-        <Router>
+        <Router onC>
           <div className="main-container">
             <Header />
             <main style={{ backgroundColor: theme['bgc-bg-1'] }}>

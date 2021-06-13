@@ -16,7 +16,7 @@ function CategoryPage(props) {
     return (
         <div className="categories-container">
             {
-                data && data.map(el => <div style={{
+                data && data.map((el,index) => <div key={index} style={{
                     backgroundColor:theme['bgc-fr-2'],
                     color:theme['txc-fr-2']
                 }}><h2>{el}</h2></div>)
