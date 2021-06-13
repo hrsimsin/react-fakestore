@@ -1,0 +1,8 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax( min( 25rem , 100%), 1fr));
+    gap: 1.5em;
+    padding: 1.5em;
+    height: 100%;
+    overflow-y: auto;
+}
