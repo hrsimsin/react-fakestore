@@ -4,10 +4,11 @@ import './App.css';
 import MenuContext from './context/MenuContext';
 import { useState } from 'react';
 import ThemeContext from './context/ThemeContext';
-import { FaGifts, FaBeer, FaShoppingCart, FaLayerGroup } from 'react-icons/fa';
+import { FaGifts, FaShoppingCart, FaLayerGroup } from 'react-icons/fa';
 import { RiLogoutBoxRFill } from "react-icons/ri";
-import { VscSymbolClass } from "react-icons/vsc";
-
+import ProductPage from './components/ProductPage/ProductPage';
+import CategoryPage from './components/CategoryPage/CategoryPage';
+import CartPage from './components/CartPage/CartPage';
 
 function App() {
 
@@ -39,17 +40,20 @@ function App() {
         {
           name: 'Products',
           selected: true,
-          icon: <FaGifts/>
+          icon: <FaGifts/>,
+          component: <ProductPage />
         },
         {
           name: 'Categories',
           selected: false,
-          icon: <FaLayerGroup/>
+          icon: <FaLayerGroup/>,
+          component: <CategoryPage />
         },
         {
           name: 'Cart',
           selected: false,
-          icon: <FaShoppingCart/>
+          icon: <FaShoppingCart/>,
+          component: <CartPage />
         },
         {
           name:'Logout',
@@ -61,10 +65,11 @@ function App() {
         var { menuList, ...rest } = menu;
         menuList = menuList.map(el => {el.selected = (el.name === name); return el;})
         setMenu({ menuList, ...rest });
-      }
+      },
+      getSelected: () => menu.menuList.filter(el => el.selected)[0]
     });
 
-  const [theme, setTheme] = useState(lightTheme)
+  const [theme, setTheme] = useState(lightTheme);
 
   return (
     <MenuContext.Provider value={menu}>
@@ -72,7 +77,9 @@ function App() {
         <div className="main-container">
           <Header />
           <main style={{backgroundColor:theme['bgc-bg-1']}}>
-
+            {
+              menu.getSelected().component
+            }
           </main>
         </div>
       </ThemeContext.Provider>

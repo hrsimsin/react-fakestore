@@ -4,6 +4,7 @@ nav {
     flex-grow: 1;
 }
 
+
 ul {
     display: flex;
     flex-direction: column;
