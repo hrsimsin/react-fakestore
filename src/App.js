@@ -2,8 +2,11 @@ import logo from './logo.svg';
 import Header from './components/Header/Header';
 import './App.css';
 import MenuContext from './context/MenuContext';
-import { useState } from 'react';
+import React,{useState, useEffect} from 'react'
 import ThemeContext from './context/ThemeContext';
+import axios from 'axios'
+import ProductGrid from './components/Products/ProductGrid';
+import Search from './components/ui/Search';
 
 function App() {
 
@@ -28,6 +31,24 @@ function App() {
     'txc-bg-1': '#EFEFEF',
     toggle: () => setTheme(lightTheme)
   }
+  const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [query,setQuery] = useState('');
+  useEffect(() => {
+    const fetchItems = async () => {
+        const result = await axios(`https://fakestoreapi.com/products`)
+        // console.log(result.data);
+        setItems(result.data);
+        setIsLoading(false);
+    }
+    fetchItems();
+
+  },[]);
+
+  useEffect(()=> {
+    if (query!=="")
+      setItems(items.filter((item)=>item.title.toLocaleLowerCase().includes(query)));
+  },[query, items])
 
   const [menu, setMenu] = useState(
     {
@@ -54,7 +75,8 @@ function App() {
         }
         setMenu({ menuList, ...rest });
       }
-    });
+    },[]);
+  
 
   const [theme, setTheme] = useState(lightTheme)
 
@@ -64,7 +86,8 @@ function App() {
         <div className="main-container">
           <Header />
           <main style={{backgroundColor:theme['bgc-bg-1']}}>
-
+            <Search getQuery={(q) => setQuery(q)}/>
+            <ProductGrid isLoading={isLoading} items={items} />
           </main>
         </div>
       </ThemeContext.Provider>
