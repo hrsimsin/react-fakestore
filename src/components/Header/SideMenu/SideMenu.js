@@ -11,7 +11,7 @@ const SideMenu = (props) => {
         <nav>
             <ul>
                 {
-                    menu.menuList.map((el,index,arr)=>  <MenuItem el={el} index={index} />)
+                    menu.menuList.map((el,index,arr)=>  <MenuItem mobileMode={props.mobileMode} key={index} el={el} index={index} />)
                 }
             </ul>
         </nav>

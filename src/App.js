@@ -19,6 +19,7 @@ import {
   Link,
   useHistory
 } from "react-router-dom";
+import MobileMenu from './components/MobileMenu/MobileMenu';
 
 function App() {
 
@@ -66,7 +67,9 @@ function App() {
           icon: <FaShoppingCart />,
           link: '/cart'
         }
-      ]
+      ],
+      mobileMenuOpen : false,
+      setMobileMenuOpen: (state) => {menu.mobileMenuOpen = state; setMenu({...menu})}
     });
 
   const [theme, setTheme] = useState(lightTheme);
@@ -109,6 +112,9 @@ function App() {
             <div className="main-container">
               <Header />
               <main style={{ backgroundColor: theme['bgc-bg-1'] }}>
+                {
+                  menu.mobileMenuOpen && <MobileMenu />
+                }
                 <Switch>
                   <Route exact path="/">
                     <Redirect to="/products" />

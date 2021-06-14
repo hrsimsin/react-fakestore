@@ -23,7 +23,7 @@ function CartPage(props) {
             {
                 (cart.products.length == 0) &&
                 <div className="span-page-center">
-                    <h1 style={{
+                    <h1 className="empty-message" style={{
                         color: theme['txc-bg-1']
                     }}>Cart is Empty.</h1>
                 </div>

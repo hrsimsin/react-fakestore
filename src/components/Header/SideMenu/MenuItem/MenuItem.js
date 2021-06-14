@@ -27,6 +27,11 @@ function MenuItem(props) {
     return (
         <Link style={{textDecoration:'none'}} to={props.el.link}>
             <li
+            onClick={()=>{
+                if(props.mobileMode){
+                    menu.setMobileMenuOpen(false);
+                }
+            }}
                 className={
                     (selected) ? "selected" : ""
                 }

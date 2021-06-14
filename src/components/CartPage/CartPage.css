@@ -6,6 +6,10 @@
     height: 100%;
 }
 
+.empty-message{
+    text-align: center !important;
+}
+
 .cartpage{
     width: 100%;
     padding: 1.5em;

@@ -18,20 +18,40 @@ h1{
   transition: background-color 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
+.menu-toggle{
+  cursor: pointer;
+  font-size: 2rem;
+}
+
 @media(min-width: 80em){
   h1{
     text-align: center;
   }
+  .menu-toggle{
+    display: none;
+  }
 }
 
 @media(max-width: 80em){
+  h1{
+    flex-grow: 1;
+  }
   header{
     padding: 0 1em;
+    flex-direction: row;
+    align-items: center;
   }
+}
+
+.desk-side-menu{
+  flex-grow: 1;
 }
 
 @media (max-width: 80em) {
   .theme-toggle{
       display: none;
+  }
+  .desk-side-menu{
+    display: none;
   }
 }
