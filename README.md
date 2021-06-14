@@ -2,7 +2,7 @@
 A React-based website using the https://fakestoreapi.com/ API.
 
 
-https://user-images.githubusercontent.com/40620896/121515802-35bd9500-ca0b-11eb-804f-31d627656a6b.mov
+https://user-images.githubusercontent.com/40620896/121915271-b274aa00-cd50-11eb-8e10-8917a30e87a9.mov
 
 ## Live
 Project is live at https://user-images.githubusercontent.com/40620896/121913945-72f98e00-cd4f-11eb-94da-a6d3b5c54e69.mov
