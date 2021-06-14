@@ -31,6 +31,9 @@ function CartPage(props) {
             {
                 (cart.products.length != 0) &&
                 <div className="cart-info">
+                    <button onClick={cart.clear} style={{backgroundColor:theme['acc'],color:theme['txc-acc']}} className="btn-clear">
+                        Clear Cart
+                    </button>
                     <div className="cart-items-container">
                         {
                             cart.products.map((el, index) => <CartItem key={index} product={el} />)

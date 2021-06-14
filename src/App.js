@@ -101,7 +101,8 @@ function App() {
         return prd.quantity;
       }
       return (0);
-    }
+    },
+    clear: () => {cart.products =[]; setCart({...cart});}
   });
 
   return (
