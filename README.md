@@ -13,14 +13,10 @@ Project is live at https://user-images.githubusercontent.com/40620896/121913945-
 - &nbsp; List all products of a particular category
 - &nbsp; Add products to the local cart (in state).
 - &nbsp; A checkout section where you can
-
--- &nbsp; &nbsp; Users can see their entire cart
-
--- &nbsp; &nbsp; Allow users to remove particular products
-
--- &nbsp: &nbsp; Allow users to clear the cart
-
--- &nbsp: &nbsp; Allow users to see a total amount
+  -- &nbsp; Users can see their entire cart
+  -- &nbsp; Allow users to remove particular products
+  -- &nbsp; Allow users to clear the cart
+  -- &nbsp; Allow users to see a total amount
 
 
 ## Authors
