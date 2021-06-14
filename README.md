@@ -8,19 +8,15 @@ https://user-images.githubusercontent.com/40620896/121915271-b274aa00-cd50-11eb-
 Project is live at https://user-images.githubusercontent.com/40620896/121913945-72f98e00-cd4f-11eb-94da-a6d3b5c54e69.mov
 
 ## Features
-- &nbsp; List all products
-- &nbsp; List all categories
-- &nbsp; List all products of a particular category
-- &nbsp; Add products to the local cart (in state).
-- &nbsp; A checkout section where you can
-&nbsp; &nbsp;  Users can see their entire cart
-<br />
-&nbsp; &nbsp;  Allow users to remove particular products
-<br />
-&nbsp; &nbsp;  Allow users to clear the cart
-<br />
-&nbsp; &nbsp;  Allow users to see a total amount
-
+1. List all products
+2. List all categories
+3. List all products of a particular category
+4. Add products to the local cart (in state).
+5. A checkout section where you can
+   - Users can see their entire cart
+   - Allow users to remove particular products
+   - Allow users to clear the cart
+   - Allow users to see a total amount
 
 ## Authors
 - &nbsp; Abhivandan Pandey
