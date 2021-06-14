@@ -1,3 +1,5 @@
+
+
 .categories-container{
     display: grid;
     gap: max(3em,10vw);
@@ -19,6 +21,14 @@
     justify-content: center;
     cursor: pointer;
     font-family: 'Archivo', sans-serif;
+    transition: background-color 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: color 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+}
+
+.category-item{
+    transition: background-color 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: color 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .loader-layout{

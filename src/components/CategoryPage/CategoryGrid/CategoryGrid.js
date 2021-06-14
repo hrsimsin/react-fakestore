@@ -21,7 +21,8 @@ const CategoryGrid = (props) => {
                 <div className="categories-container">
                     {
                         data.map((el, index) =><Link style={{textDecoration:'none',height:'100%'}} to={`/categories/${el}`}> <div
-                            key={index} style={{
+                        className="category-item"    
+                        key={index} style={{
                                 backgroundColor: theme['bgc-fr-2'],
                                 color: theme['txc-fr-2'],
                                 height:'100%'

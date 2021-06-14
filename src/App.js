@@ -43,8 +43,8 @@ function App() {
     'txc-fr-1': '#EFEFEF',
     'txc-fr-2': '#EFEFEF',
     'txc-bg-1': '#EFEFEF',
-    'acc': '#fca311',
-    'txc-acc':'#f1faee',
+    'acc': '#ffd60a',
+    'txc-acc':'#03045e',
     toggle: () => setTheme(lightTheme)
   }
 

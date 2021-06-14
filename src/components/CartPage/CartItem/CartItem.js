@@ -12,7 +12,7 @@ const CartItem = (props) => {
                 backgroundColor: theme['bgc-fr-2']
             }}
             class="item-card">
-            <span style={{ color: theme['txc-fr-2'] }}>{props.product.title}</span>
+            <span className="item-title" style={{ color: theme['txc-fr-2'] }}>{props.product.title}</span>
             <div className="amount-info">
                 <div className="quantity-control">
                     <button className="btn-increase" onClick={
