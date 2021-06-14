@@ -25,7 +25,7 @@ function MenuItem(props) {
     },[]);
 
     return (
-        <Link to={props.el.link}>
+        <Link style={{textDecoration:'none'}} to={props.el.link}>
             <li
                 className={
                     (selected) ? "selected" : ""

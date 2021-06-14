@@ -18,6 +18,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-family: 'Archivo', sans-serif;
 }
 
 .loader-layout{

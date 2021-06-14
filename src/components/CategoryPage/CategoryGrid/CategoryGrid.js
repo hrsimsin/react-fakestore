@@ -20,11 +20,12 @@ const CategoryGrid = (props) => {
                 data &&
                 <div className="categories-container">
                     {
-                        data.map((el, index) => <div
+                        data.map((el, index) =><Link style={{textDecoration:'none',height:'100%'}} to={`/categories/${el}`}> <div
                             key={index} style={{
                                 backgroundColor: theme['bgc-fr-2'],
-                                color: theme['txc-fr-2']
-                            }}><Link to={`/categories/${el}`}><h2 style={{ color: theme['txc-fr-2'] }}>{el}</h2></Link></div>)}
+                                color: theme['txc-fr-2'],
+                                height:'100%'
+                            }}><h2 style={{ color: theme['txc-fr-2'] }}>{el}</h2></div></Link>)}
                 </div>
 
             }

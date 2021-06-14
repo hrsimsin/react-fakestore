@@ -6,11 +6,8 @@ header {
 
 h1{
   transition: color 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  font-weight: 400;
-}
-
-h1 .strong{
-  font-weight: 600;
+  font-weight: 300;
+  font-family: 'Pacifico', cursive;
 }
 
 .theme-toggle{

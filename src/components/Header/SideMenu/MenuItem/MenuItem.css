@@ -9,6 +9,7 @@ li {
 
 li .label{
     margin-left: 0.7em;
+    font-family: 'Archivo', sans-serif;
 }
 
 .selected {
