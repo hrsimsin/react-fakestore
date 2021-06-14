@@ -13,16 +13,16 @@ Project is live at https://user-images.githubusercontent.com/40620896/121913945-
 - &nbsp; List all products of a particular category
 - &nbsp; Add products to the local cart (in state).
 - &nbsp; A checkout section where you can
-&nbsp;&nbsp;  -- &nbsp; Users can see their entire cart
-&nbsp;&nbsp;  -- &nbsp; Allow users to remove particular products
-&nbsp;&nbsp;  -- &nbsp; Allow users to clear the cart
-&nbsp;&nbsp;  -- &nbsp; Allow users to see a total amount
+&nbsp; &nbsp;  -- &nbsp; Users can see their entire cart
+&nbsp; &nbsp;  -- &nbsp; Allow users to remove particular products
+&nbsp; &nbsp;  -- &nbsp; Allow users to clear the cart
+&nbsp; &nbsp;  -- &nbsp; Allow users to see a total amount
 
 
 ## Authors
-Abhivandan Pandey
-Anshul Gautam
-Harsimar Singh
+- &nbsp; Abhivandan Pandey
+- &nbsp; Anshul Gautam
+- &nbsp; Harsimar Singh
 
 
 # Getting Started with Create React App
