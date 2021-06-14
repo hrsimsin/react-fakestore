@@ -34,10 +34,10 @@ function MenuItem(props) {
                 onMouseLeave={() => { setHover(false) }}
 
                 style={{
-                    color: theme['txc-fr-1'],
+                    color: (selected) ? theme['txc-fr-2'] : theme['txc-fr-1'],
                     backgroundColor: (selected) ? theme['bgc-fr-2'] : (hover ? ColorUtils.addAlpha(theme['bgc-fr-2'], 0.4) : '')
                 }}
-                 key={props.index}>{props.el.icon}<span className="label">{props.el.name}</span></li>
+                 key={props.index}><span style={{color:theme['acc']}}>{props.el.icon}</span><span className="label">{props.el.name}</span></li>
         </Link>
     );
 }

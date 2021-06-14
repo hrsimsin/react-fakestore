@@ -8,7 +8,7 @@ function Header(props) {
     const theme = useContext(ThemeContext);
     return (
         <header style={{ backgroundColor: theme['bgc-fr-1'] }}>
-            <h1 style={{ color: theme['txc-fr-1'] }}>Fake<span className="strong">Store</span></h1>
+            <h1 style={{ color: theme['acc'] }}>Fake<span className="strong">Store</span></h1>
             <SideMenu />
             <div style={{ backgroundColor: theme['bgc-fr-2']}} className="theme-toggle">
                 <DarkModeToggle

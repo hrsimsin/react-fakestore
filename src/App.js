@@ -24,12 +24,14 @@ function App() {
 
   const lightTheme = {
     name: 'light',
-    'bgc-fr-1': '#1d3557',
-    'bgc-fr-2': '#457b9d',
-    'bgc-bg-1': '#a8dadc',
+    'bgc-fr-1': '#03045e',
+    'bgc-fr-2': '#90e0ef',
+    'bgc-bg-1': '#FFF',
     'txc-fr-1': '#f1faee',
-    'txc-fr-2': '#f1faee',
+    'txc-fr-2': '#1d3557',
     'txc-bg-1': '#000',
+    'acc': '#ffd60a',
+    'txc-acc':'#03045e',
     toggle: () => setTheme(darkTheme)
   }
 
@@ -41,6 +43,8 @@ function App() {
     'txc-fr-1': '#EFEFEF',
     'txc-fr-2': '#EFEFEF',
     'txc-bg-1': '#EFEFEF',
+    'acc': '#fca311',
+    'txc-acc':'#f1faee',
     toggle: () => setTheme(lightTheme)
   }
 
@@ -61,11 +65,6 @@ function App() {
           name: 'Cart',
           icon: <FaShoppingCart />,
           link: '/cart'
-        },
-        {
-          name: 'Logout',
-          icon: <RiLogoutBoxRFill />,
-          link: '/logout'
         }
       ]
     });

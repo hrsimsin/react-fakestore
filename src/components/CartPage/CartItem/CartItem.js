@@ -18,8 +18,8 @@ const CartItem = (props) => {
                     <button className="btn-increase" onClick={
                         () => { cart.increaseProductQuantity(props.product); }
                     } style={{
-                        backgroundColor: theme['bgc-fr-1'],
-                        color: theme['txc-fr-1']
+                        backgroundColor: theme['acc'],
+                        color: theme['txc-acc']
                     }}>
                         +
                     </button>
@@ -33,8 +33,8 @@ const CartItem = (props) => {
                         () => { cart.decreaseProductQuantity(props.product); }
                     }
                         style={{
-                            backgroundColor: theme['bgc-fr-1'],
-                            color: theme['txc-fr-1']
+                            backgroundColor: theme['acc'],
+                            color: theme['txc-acc']
                         }}>
                         -
                     </button>

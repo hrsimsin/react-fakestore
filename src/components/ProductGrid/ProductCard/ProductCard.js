@@ -34,8 +34,8 @@ function ProductCard(props) {
                     <button onClick={
                         () => { cart.addProduct(props.product); }
                     } style={{
-                        backgroundColor: theme['bgc-fr-1'],
-                        color: theme['txc-fr-1']
+                        backgroundColor: theme['acc'],
+                        color: theme['txc-acc']
                     }}>
                         <FaCartPlus />
                     </button>
@@ -46,14 +46,14 @@ function ProductCard(props) {
                         <button className="btn-increase" onClick={
                             () => { cart.increaseProductQuantity(props.product);}
                         } style={{
-                            backgroundColor: theme['bgc-fr-1'],
-                            color: theme['txc-fr-1']
+                            backgroundColor: theme['acc'],
+                            color: theme['txc-acc']
                         }}>
                             +
                         </button>
                         <div className="quantity" style={{
-                            backgroundColor:theme['bgc-bg-1'],
-                            color: theme['txc-bg-1']
+                            backgroundColor:theme['bgc-fr-1'],
+                            color: theme['txc-fr-1']
                         }}>
                             {quantity}
                         </div>
@@ -61,8 +61,8 @@ function ProductCard(props) {
                             () => { cart.decreaseProductQuantity(props.product); }
                         }
                          style={{
-                            backgroundColor: theme['bgc-fr-1'],
-                            color: theme['txc-fr-1']
+                            backgroundColor: theme['acc'],
+                            color: theme['txc-acc']
                         }}>
                             -
                         </button>
