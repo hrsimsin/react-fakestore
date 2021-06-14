@@ -7,6 +7,45 @@
     padding: 1.5em;
 }
 
+.product-card .bottom-row{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.product-card .bottom-row p:first-child{
+    flex: 1;
+    text-align: left;
+}
+
+.product-card .bottom-row button{
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 0.8em;
+}
+
+.quantity-control{
+    display: flex;
+}
+
+.quantity-control .quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+}
+
+.quantity-control .btn-increase{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.quantity-control .btn-decrease{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
 h3 {
     text-align: center;
     display: inline-block;

@@ -6,6 +6,12 @@
     padding: max(1.5em,5vw);
 }
 
+@media (max-width: 80em){
+    .categories-container{
+        grid-template-columns: 1fr;
+    }
+}
+
 .categories-container div{
     border-radius: 1em;
     display: flex;
