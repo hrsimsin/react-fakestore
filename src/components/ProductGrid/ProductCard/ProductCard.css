@@ -65,7 +65,8 @@ img {
     height: auto;
     max-width: 10em;
     max-height: 10em;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
+    clip-path: circle(50% at 50% 50%);
 }
 
 p {
