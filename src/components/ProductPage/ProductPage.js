@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './ProductPage.css';
 import ProductCard from '../ProductGrid/ProductCard/ProductCard';
 import ProductGrid from '../ProductGrid/ProductGrid';
+import ThemeContext from '../../context/ThemeContext';
 
 function ProductPage(props) {
 
     const [data, setData] = useState(null);
+    const theme = useContext(ThemeContext);
 
     useEffect(async () => {
         setData(null);
@@ -17,6 +19,15 @@ function ProductPage(props) {
         <>
             {
                 data && <ProductGrid products={data} />
+            }
+            {
+                !data &&
+                <div className="loader-layout">
+                    <div style={{
+                        borderColor:theme['bgc-fr-1'],
+                        borderTopColor:theme['txc-fr-1'],
+                    }} className="loader"></div>
+                </div>
             }
         </>
     );
