@@ -17,7 +17,9 @@ Project is live at https://user-images.githubusercontent.com/40620896/121913945-
    - Allow users to remove particular products
    - Allow users to clear the cart
    - Allow users to see a total amount
-6. BONUS FEATURE: Dark Mode
+6. BONUS FEATURE:
+   - Fully Responsive Website
+   - Dark Mode
 
 ## Authors
 - &nbsp; Abhivandan Pandey
