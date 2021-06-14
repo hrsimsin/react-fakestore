@@ -74,11 +74,12 @@ function App() {
 
   const [cart, setCart] = useState({
     products: [],
-    addProduct: (product) => cart.products.push({ ...product, quantity: 1 }),
+    addProduct: (product) => {cart.products.push({ ...product, quantity: 1 }); setCart({...cart}); },
     increaseProductQuantity: (product) => {
       const prd = cart.products.filter(el => el.id === product.id)[0];
       if (prd)
         prd.quantity += 1;
+      setCart({...cart});
     },
     decreaseProductQuantity: (product) => {
       const prd = cart.products.filter(el => el.id === product.id)[0];
@@ -90,6 +91,7 @@ function App() {
           prd.quantity -= 1;
         }
       }
+      setCart({...cart});
     },
     getProductQuantity: (product) => {
       const prd = cart.products.filter(el => el.id === product.id)[0];

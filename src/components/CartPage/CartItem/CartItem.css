@@ -1,0 +1,32 @@
+.item-card{
+    width: 100%;
+    display: flex;
+    border-radius: 1em;
+    padding: 1.5em;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.amount-info{
+    display: flex;
+    align-items: center;
+}
+
+
+.item-card span:first-child{
+    flex-grow: 1;
+}
+
+@media (max-width: 80em){
+    .item-card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .item-card span:first-child{
+        margin-bottom: 1em;
+    }
+}
+
+.amount-multiply{
+    margin-left: 1em;
+}

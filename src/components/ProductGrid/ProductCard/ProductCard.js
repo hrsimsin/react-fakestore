@@ -12,7 +12,7 @@ function ProductCard(props) {
 
     useEffect(() => {
         setQuantity(cart.getProductQuantity(props.product));
-    }, []);
+    }, [cart]);
 
     return (
         <div className="product-card" style={{ backgroundColor: theme['bgc-fr-2'] }}>
@@ -32,7 +32,7 @@ function ProductCard(props) {
                 {
                     (quantity == 0) &&
                     <button onClick={
-                        () => { cart.addProduct(props.product); setQuantity(quantity + 1); }
+                        () => { cart.addProduct(props.product); }
                     } style={{
                         backgroundColor: theme['bgc-fr-1'],
                         color: theme['txc-fr-1']
@@ -44,7 +44,7 @@ function ProductCard(props) {
                     (quantity != 0) &&
                     <div className="quantity-control">
                         <button className="btn-increase" onClick={
-                            () => { cart.increaseProductQuantity(props.product); setQuantity(quantity+1); }
+                            () => { cart.increaseProductQuantity(props.product);}
                         } style={{
                             backgroundColor: theme['bgc-fr-1'],
                             color: theme['txc-fr-1']
@@ -58,7 +58,7 @@ function ProductCard(props) {
                             {quantity}
                         </div>
                         <button className="btn-decrease" onClick={
-                            () => { cart.decreaseProductQuantity(props.product); setQuantity(quantity-1); }
+                            () => { cart.decreaseProductQuantity(props.product); }
                         }
                          style={{
                             backgroundColor: theme['bgc-fr-1'],
